@@ -1,8 +1,6 @@
 import { Request, Response } from "express";
 import { User } from "@prisma/client";
-import dbClient from "../../utils/dbClient";
 import { userWithValidation } from "./service";
-import { compare } from "bcrypt";
 
 export const loginUser = async (req: Request, res: Response) => {
   const userCredentials: User = req.body;
