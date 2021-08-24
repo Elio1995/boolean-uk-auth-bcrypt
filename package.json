@@ -1,0 +1,24 @@
+{
+  "name": "password-exercise",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "tsc && node ./bin/www || exit1",
+    "start": "nodemon -e ts -x \"npm run compile\""
+  },
+  "dependencies": {
+    "@prisma/client": "^2.29.1",
+    "@types/bcrypt": "^5.0.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.7.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "prisma": "^2.29.1"
+  }
+}
